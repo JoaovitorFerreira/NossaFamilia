@@ -1,0 +1,896 @@
+fileFormatVersion: 2
+guid: 0ee1a77a8923fe84bb39e7e4793aba7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3027778333922320047
+    second: bomberman-removebg-preview_0
+  - first:
+      213: -2271035459435605309
+    second: bomberman-removebg-preview_1
+  - first:
+      213: 2676645622729799144
+    second: bomberman-removebg-preview_2
+  - first:
+      213: 2402396232830279191
+    second: bomberman-removebg-preview_3
+  - first:
+      213: -5201122059058238219
+    second: bomberman-removebg-preview_4
+  - first:
+      213: -8172425826656648457
+    second: bomberman-removebg-preview_5
+  - first:
+      213: -8348739900400866505
+    second: bomberman-removebg-preview_6
+  - first:
+      213: -724805207987589210
+    second: bomberman-removebg-preview_7
+  - first:
+      213: -4926121165004333307
+    second: bomberman-removebg-preview_8
+  - first:
+      213: -5849232693044828092
+    second: bomberman-removebg-preview_9
+  - first:
+      213: -8130262249328232578
+    second: bomberman-removebg-preview_10
+  - first:
+      213: 7741331643819695259
+    second: bomberman-removebg-preview_11
+  - first:
+      213: 4879275067770731438
+    second: bomberman-removebg-preview_12
+  - first:
+      213: 832316988623117410
+    second: bomberman-removebg-preview_13
+  - first:
+      213: 2824270620415663661
+    second: bomberman-removebg-preview_14
+  - first:
+      213: 5226765353531976452
+    second: bomberman-removebg-preview_15
+  - first:
+      213: 5799381862595614923
+    second: bomberman-removebg-preview_16
+  - first:
+      213: 7893685386827216026
+    second: bomberman-removebg-preview_17
+  - first:
+      213: 6662084551357997943
+    second: bomberman-removebg-preview_18
+  - first:
+      213: -2852039729779929012
+    second: bomberman-removebg-preview_19
+  - first:
+      213: -2088928584623556197
+    second: bomberman-removebg-preview_20
+  - first:
+      213: -1365488234841206687
+    second: bomberman-removebg-preview_21
+  - first:
+      213: -1517483714492590021
+    second: bomberman-removebg-preview_22
+  - first:
+      213: -3223900426595123215
+    second: bomberman-removebg-preview_23
+  - first:
+      213: 6183320898207395397
+    second: bomberman-removebg-preview_24
+  - first:
+      213: -1893344641577290565
+    second: bomberman-removebg-preview_25
+  - first:
+      213: -5258324161581148106
+    second: bomberman-removebg-preview_26
+  - first:
+      213: -4597951776266145530
+    second: bomberman-removebg-preview_27
+  - first:
+      213: 9054609647322069109
+    second: bomberman-removebg-preview_28
+  - first:
+      213: -4288346956400633606
+    second: bomberman-removebg-preview_29
+  - first:
+      213: -5254021867833849444
+    second: bomberman-removebg-preview_30
+  - first:
+      213: -3944407204355351544
+    second: bomberman-removebg-preview_31
+  - first:
+      213: 5121573864692520554
+    second: bomberman-removebg-preview_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 521
+        width: 242
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae50145a54d40a20800000000000000
+      internalID: 3027778333922320047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 63
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c256083849ab70e0800000000000000
+      internalID: -2271035459435605309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 47
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5f96c230b552520800000000000000
+      internalID: 2676645622729799144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 448
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ed59335a6075120800000000000000
+      internalID: 2402396232830279191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 448
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fca2644b07e1d7b0800000000000000
+      internalID: -5201122059058238219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 377
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f207e09206b59e80800000000000000
+      internalID: -8172425826656648457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 376
+        width: 42
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73be97a4b41532c80800000000000000
+      internalID: -8348739900400866505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 377
+        width: 61
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afeb86e089f0f5f0800000000000000
+      internalID: -724805207987589210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 376
+        width: 61
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f126f66e6e2abb0800000000000000
+      internalID: -4926121165004333307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 305
+        width: 49
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44826723bd953dea0800000000000000
+      internalID: -5849232693044828092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 304
+        width: 55
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77b50a6f818b2f80800000000000000
+      internalID: -8130262249328232578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 302
+        width: 54
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c1d5e5d1cbe6b60800000000000000
+      internalID: 7741331643819695259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 299
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabf4e792daa6b340800000000000000
+      internalID: 4879275067770731438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 302
+        width: 53
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c576f24ebfc8b00800000000000000
+      internalID: 832316988623117410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 298
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e92776a23d13720800000000000000
+      internalID: 2824270620415663661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 232
+        width: 49
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ba79d7563398840800000000000000
+      internalID: 5226765353531976452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 231
+        width: 47
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8dadcd31b8b7050800000000000000
+      internalID: 5799381862595614923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_17
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 231
+        width: 46
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94378a69010c8d60800000000000000
+      internalID: 7893685386827216026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_18
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 231
+        width: 47
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773af4b2a9a747c50800000000000000
+      internalID: 6662084551357997943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 149
+        width: 49
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c409a2df9f48b68d0800000000000000
+      internalID: -2852039729779929012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_20
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 153
+        width: 49
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b997a581582a203e0800000000000000
+      internalID: -2088928584623556197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 50
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16090516fafcc0de0800000000000000
+      internalID: -1365488234841206687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_22
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 166
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b389a350a90d0fae0800000000000000
+      internalID: -1517483714492590021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_23
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 163
+        width: 50
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff319994a76243d0800000000000000
+      internalID: -3223900426595123215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_24
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 78
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54ea6e5a8919fc550800000000000000
+      internalID: 6183320898207395397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_25
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 86
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb47561741d79b5e0800000000000000
+      internalID: -1893344641577290565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_26
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 84
+        width: 61
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6381a1be80ea607b0800000000000000
+      internalID: -5258324161581148106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_27
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 84
+        width: 61
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601b741783bc030c0800000000000000
+      internalID: -4597951776266145530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_28
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 88
+        width: 61
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578f478308f68ad70800000000000000
+      internalID: 9054609647322069109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_29
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 21
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8dc1ee92bbc74c0800000000000000
+      internalID: -4288346956400633606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_30
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 21
+        width: 62
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9901adb2f6f517b0800000000000000
+      internalID: -5254021867833849444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_31
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 21
+        width: 63
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c58e6cb86a249c0800000000000000
+      internalID: -3944407204355351544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman-removebg-preview_32
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 21
+        width: 74
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a661cef6b4c731740800000000000000
+      internalID: 5121573864692520554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
