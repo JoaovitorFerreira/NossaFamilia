@@ -1,19 +1,21 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
-{
+{   
+    Walker walkerScript;
+    Jumper jumperScript;
+    Shooter shooterScript;
 
-    public Animator animator;
-    public Rigidbody2D rigidbody;
-    public float speed;
+    bool facingRight = true;
 
     // Start is called before the first frame update
     void Start()
     {
-       
-        
+       walkerScript = gameObject.GetComponent<Walker>();
+       jumperScript =  gameObject.GetComponent<Jumper>();
+       shooterScript = gameObject.GetComponent<Shooter>();
     }
 
     // Update is called once per frame
@@ -24,32 +26,48 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        Walk();
-
-
+        walk();
+        jump();
+        shoot();
     }
 
-    void Walk()
+    void walk()
     {
-        float direcao = Input.GetAxis("Horizontal");
-        rigidbody.velocity = new Vector2(direcao * speed, rigidbody.velocity.y);
+        float direcao = Input.GetAxis("Horizontal");                
+    
 
-        if (direcao > 0)
+        if(direcao > 0)
         {
-            transform.eulerAngles = new Vector2(0,0);
-            animator.SetInteger("Transition", 1);
+            facingRight = true;
+            walkerScript.walkRight(jumperScript.isJumping());
         }
-
-        if (direcao < 0)
+        else if (direcao < 0)
+        {            
+            facingRight = false;
+            walkerScript.walkLeft(jumperScript.isJumping());
+        }
+        else if(direcao == 0) 
         {
-            transform.eulerAngles = new Vector2(0, 180);
-            animator.SetInteger("Transition", 1);
-        }
-        if (direcao ==0)
-        {
-            animator.SetInteger("Transition", 0);
-        }
-
+            walkerScript.stay(jumperScript.isJumping());
+        }            
     }
+
+    void jump()
+    {         
+        if(Input.GetButtonDown("Jump") && !jumperScript.isJumping())
+        {                                
+            gameObject.GetComponent<Jumper>().jump();
+        }        
+    }
+
+    void shoot()
+    {
+        if(Input.GetKeyDown(KeyCode.X))
+        {
+            shooterScript.shoot(facingRight, true);
+        }
+    }
+
+    
 
 }

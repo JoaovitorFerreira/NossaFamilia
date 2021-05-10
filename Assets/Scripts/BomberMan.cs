@@ -11,53 +11,111 @@ public class BomberMan : MonoBehaviour
     public float speed;
     public float timeRemaining = 10;
     public bool isWalking = true;
+    float timeShooting = 2;
+    GameObject player;
+    bool timeToWalk = true;
+    float walkingTime = 1f;
+    float shootingTime = 0.3f;
+    float nextChangeTime;
+    Walker walkerScript;
+    Shooter shooterScript;
+    CloseAtacker attackerScript;
+    bool facingRight = false;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-
-
+        player = GameObject.Find("Player");
+        walkerScript = gameObject.GetComponent<Walker>();
+        shooterScript = gameObject.GetComponent<Shooter>();
+        attackerScript = gameObject.GetComponent<CloseAtacker>();
+        nextChangeTime = Time.time + walkingTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (timeRemaining > 0)
+        if (Time.time > nextChangeTime)
         {
-            timeRemaining -= Time.deltaTime;
-            isWalking = false;
-        }
-        else
-        {
-            timeRemaining = 10;
-            isWalking = true;
+            if(timeToWalk)
+                nextChangeTime = Time.time + shootingTime;
+            else
+                nextChangeTime = Time.time + walkingTime;
 
+            timeToWalk = !timeToWalk;
         }
+
+        // if (timeRemaining > 0)
+        // {
+        //     timeRemaining -= Time.deltaTime;
+        //     isWalking = false;
+        // }
+        // else
+        // {
+        //     timeRemaining = 10;
+        //     isWalking = true;
+
+        // }
 
     }
 
     void FixedUpdate()
     {
-        Walk();
+        makeDecision();        
     }
 
-    void Walk()
+    void makeDecision()
     {
-        if (isWalking)
+        float distance = player.transform.position.x - transform.position.x;        
+
+        if (distance < 0.7 && distance > -0.7)
         {
-            rigidbody.velocity = new Vector2(-1 * speed, rigidbody.velocity.y);
-            //personagem vira pros lados
-                transform.eulerAngles = new Vector2(0, 180);
-                animator.SetInteger("Transition", 1);
+            attack();
+        }
+        else
+        {            
+            if (timeToWalk)
+            {                
+                walk(distance);
+            }
+            else
+            {
+                shoot();
+            }
+        }
+
+    }
 
 
+    void walk(float distance)
+    {
+
+        if (distance < 0)
+        {
+            facingRight = false;
+            walkerScript.walkLeft(false);
         }
         else
         {
-                animator.SetInteger("Transition", 0);
+            facingRight = true;
+            walkerScript.walkRight(false);
         }
 
+    }
+
+    void attack()
+    {
+        walkerScript.stopVelocity();        
+        attackerScript.attack();        
+    }
+
+    void shoot()
+    {
+        walkerScript.stay(false);
+
+        shooterScript.shoot(facingRight, false);
     }
 
 }
