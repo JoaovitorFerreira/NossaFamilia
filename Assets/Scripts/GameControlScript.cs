@@ -8,27 +8,19 @@ public class GameControlScript : MonoBehaviour
 {
 	public Text moneyText;
 	public int moneyAmount;
-	public GameObject rifle;
-	int isRifleSold;
 	GameObject playerObj = null;
 	GameObject shopObj = null;
 
+	Vector3 playerpos;
+
 	// Use this for initialization
 	void Start () {
-		moneyAmount = 1000;
 		
-		// isRifleSold = PlayerPrefs.GetInt ("IsRifleSold");
-
-		// if (isRifleSold == 0)
-		// 	rifle.SetActive (true);
-		// else
-		// 	rifle.SetActive (false);
-
+		moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
 		if (playerObj == null)
 			playerObj = GameObject.Find("Player");
 		if (shopObj == null)
              shopObj = GameObject.Find("Shop");
-	
 		
 	}
 	// Update is called once per frame
