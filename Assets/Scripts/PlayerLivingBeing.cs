@@ -1,23 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class LivingBeing : MonoBehaviour
+public class PlayerLivingBeing : MonoBehaviour
 {
     public Animator anim;
-    public int health = 12;
+    public int health = 10;
 
-    public AudioClip audioClip;
-    public AudioSource audioSource;
-
-    public GameObject player;
-
-    //Player player;
+    Player player;
 
     // Start is called before the first frame update
     void Start()
-    {                
-        player = GameObject.Find("Player");
+    {
+        player = gameObject.GetComponent<Player>();
     }
 
     // Update is called once per frame
@@ -39,8 +35,8 @@ public class LivingBeing : MonoBehaviour
     public void onHit(int damage)
     {        
         health -= damage;
-        
-        audioSource.PlayOneShot(audioClip);
+
+        player.hit(health);
 
         if(health >= 0)
         {
@@ -54,15 +50,11 @@ public class LivingBeing : MonoBehaviour
     {
         if(health <= 0)
         {        
-            anim.SetTrigger("death");            
-            
-            Invoke("destroyLiving", (float)1);
-        }
-    }
+            //anim.SetTrigger("death");
 
-    void destroyLiving()
-    {
-        player.GetComponent<Player>().addMoney(100);
-        Destroy(gameObject);
+            SceneManager.LoadScene("StartMenu");
+
+            //Destroy(gameObject, (float)1);
+        }
     }
 }

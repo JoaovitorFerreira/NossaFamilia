@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {   
@@ -8,7 +9,11 @@ public class Player : MonoBehaviour
     Jumper jumperScript;
     Shooter shooterScript;
 
+    public float money = 0f;
+
     bool facingRight = true;
+
+    public int health = 12;
 
     // Start is called before the first frame update
     void Start()
@@ -18,10 +23,32 @@ public class Player : MonoBehaviour
        shooterScript = gameObject.GetComponent<Shooter>();
     }
 
+    public void hit(int health)
+    {
+        this.health = health;  
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
+        if (health == 0)
+        {
+            changeScene();
+        }
+        checkHigh();
+    }
+
+    void checkHigh(){
+        float ypos = transform.position.y;
+        if (ypos < -20)
+        {
+            SceneManager.LoadScene("Restart");
+        }
+    }
+
+    public void changeScene()
+    {
+        SceneManager.LoadScene("StartMenu");
     }
 
     void FixedUpdate()
@@ -29,6 +56,29 @@ public class Player : MonoBehaviour
         walk();
         jump();
         shoot();
+    }
+
+    public void addMoney(float qnt)
+    {
+        Debug.Log("ENTRA NO ADD MONEY");
+
+        money += qnt;
+    }
+
+    public void setPlayerPosition(float x, float y, float z)
+    {
+        Vector3 vec = new Vector3(x, y, z);
+        transform.position = vec;
+    }
+    public void setMoneyAmount(float money)
+    {
+        Debug.Log("ENTRANDO NO SET MONEY AMOUNT");
+        this.money = money;
+    }
+
+    public float getMoneyAmount()
+    {
+        return money;
     }
 
     void walk()

@@ -11,7 +11,7 @@ public class Spawner : MonoBehaviour
     public string dificult;
     int countRunners;
     int countShooters;
-    public float distanceToSpawn = 17f;
+    public float distanceToSpawn = 3f;
     public float delayBetweenSpawns = 1;
     float timeToSpawnNext = 0f;
     GameObject player;
@@ -25,13 +25,13 @@ public class Spawner : MonoBehaviour
 
         if(dificult == "hard")
         {
-            countRunners = new System.Random().Next(2, 9);
-            countShooters = new System.Random().Next(2, 9);
+            countRunners = new System.Random().Next(2, 4);
+            countShooters = new System.Random().Next(2, 4);
         }
         else if (dificult == "normal")
         {
-            countRunners = new System.Random().Next(2, 5);
-            countShooters = new System.Random().Next(2, 5);
+            countRunners = new System.Random().Next(1, 2);
+            countShooters = new System.Random().Next(1, 2);
         }
         
         Debug.Log("QUANTIDADE DE CADA");
