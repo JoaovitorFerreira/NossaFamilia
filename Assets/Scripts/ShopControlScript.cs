@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class ShopControlScript : MonoBehaviour {
 
-	int moneyAmount;
+	float moneyAmount;
+	int gunsForce;
+	int health;
 
 	public Text moneyAmountText;
 
@@ -22,13 +24,39 @@ public class ShopControlScript : MonoBehaviour {
 	public Text starPrice;
 	public Button buyStarButton;
 
-	GameObject playerObj = GameObject.Find("Player");
+	GameObject playerObj;
+
+	public int subMachineDamage = 3;
+	public int sniperDamage = 5;
+	public int akDamage = 7;
+
+	float x;
+	float y;
+	float z;
+
+
 
 
 	// Use this for initialization
 	void Start () {
-		DontDestroyOnLoad(playerObj);
-		moneyAmount = PlayerPrefs.GetInt("MoneyAmount");
+		//DontDestroyOnLoad(playerObj);
+		moneyAmount = PlayerPrefs.GetFloat("MoneyAmount");
+		gunsForce = PlayerPrefs.GetInt("gunsForce");
+		health = PlayerPrefs.GetInt("health");
+
+		x = PlayerPrefs.GetFloat("x");
+		y = PlayerPrefs.GetFloat("y");
+		z = PlayerPrefs.GetFloat("z");
+
+
+		Debug.Log("ENTRANDO NO START DO SHOPPS");
+		Debug.Log("Money: " + moneyAmount);
+		Debug.Log("Guns Force: " + gunsForce);
+		Debug.Log("Health: " + health);
+
+		Debug.Log("x: " + x);
+		Debug.Log("y: " + y);
+		Debug.Log("z " + z);
 				
 	}
 	
@@ -60,9 +88,11 @@ public class ShopControlScript : MonoBehaviour {
 
 	public void buySubMachine()
 	{		
-		moneyAmount -= 200;
+		moneyAmount -= 200;		
 		subMachinePrice.text = "Sold!";
 		buySubMachineButton.gameObject.SetActive(false);
+
+		gunsForce = subMachineDamage;
 	}
 	
 	public void buyAk47()
@@ -71,6 +101,8 @@ public class ShopControlScript : MonoBehaviour {
 		moneyAmount -= 500;
 		ak47Price.text = "Sold!";
 		buyAk47Button.gameObject.SetActive (false);
+
+		gunsForce = akDamage;
 	}
 
 	public void buySniper()
@@ -79,19 +111,32 @@ public class ShopControlScript : MonoBehaviour {
 		moneyAmount -= 600;
 		sniperPrice.text = "Sold!";
 		buySniperButton.gameObject.SetActive (false);
+
+		gunsForce = sniperDamage;
 	}
 
 	public void buyStar()
 	{
 		
-		moneyAmount -= 1000;
+		moneyAmount -= 500;
+		health = 12;
 		starPrice.text = "Sold!";
 		buyStarButton.gameObject.SetActive (false);
 	}
 
 	public void exitShop()
 	{
-		PlayerPrefs.SetInt ("MoneyAmount", moneyAmount);
+		Debug.Log("ENtra no exit SHOP");
+		Debug.Log("Money logo antes de sair da loja: " + moneyAmount);
+
+		PlayerPrefs.SetFloat ("MoneyAmount", moneyAmount);
+		PlayerPrefs.SetInt ("gunsForce", gunsForce);
+		PlayerPrefs.SetInt ("health", health);		
+
+		PlayerPrefs.SetFloat("x", x);
+		PlayerPrefs.SetFloat("y", y);
+		PlayerPrefs.SetFloat("z", z);
+		
 		SceneManager.LoadScene ("SampleScene");
 	}
 

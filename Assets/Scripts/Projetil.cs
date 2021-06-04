@@ -24,6 +24,16 @@ public class Projetil : MonoBehaviour
          projetilmovement();   
     }
 
+    public void setDamage(int damage)
+    {
+        this.damage = damage;
+    }
+
+    public int getDamage()
+    {
+        return damage;
+    }
+
     void projetilmovement()
     {
         transform.Translate(Vector3.right * speed * Time.deltaTime);
@@ -47,6 +57,8 @@ public class Projetil : MonoBehaviour
             
         }
     }
+
+    
 
     // void checkCollision()
     // {

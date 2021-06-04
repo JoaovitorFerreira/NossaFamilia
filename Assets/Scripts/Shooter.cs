@@ -13,6 +13,9 @@ public class Shooter : MonoBehaviour
     public float projetilSpeed = 5f;
     float nextTime = 0f;
 
+    public AudioClip audioClip;
+    public AudioSource audioSource;
+
 
 
      
@@ -29,6 +32,17 @@ public class Shooter : MonoBehaviour
         
     }
 
+
+    public void setProjetilDamage(int damage)
+    {
+        projetilPrefab.GetComponent<Projetil>().setDamage(damage);
+    }
+
+    public int getProjetilDamage()
+    {
+        return projetilPrefab.GetComponent<Projetil>().getDamage();
+    }
+
     public void shoot(bool facingRight, bool hitEnemy)
     {
         if(Time.time > nextTime)
@@ -41,11 +55,13 @@ public class Shooter : MonoBehaviour
 
             if(hitEnemy)
             {
+                audioSource.PlayOneShot(audioClip);
                 Debug.Log("Entra no primeiro");
                 projetil = Instantiate(projetilPrefab, new Vector3(shootPoint.position.x, shootPoint.position.y, -4), transform.rotation);
             }                
             else
             {
+                audioSource.PlayOneShot(audioClip);
                 Debug.Log("Entra no segundo");
                 projetil = Instantiate(enemyProjetilPrefab, new Vector3(shootPoint.position.x, shootPoint.position.y, -4), transform.rotation);
             }

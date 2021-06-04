@@ -715,7 +715,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Price: R$ 1000'
+  m_Text: 'Price: R$ 500
+
+'
 --- !u!222 &865148389
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1327,8 +1329,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1934219985567574343, guid: d204eb31e10dea44b89c3645a1257bbf,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb276fd49b68ad74f8afb0ab05ab0523, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2341,3 +2342,6 @@ MonoBehaviour:
   buySniperButton: {fileID: 979046228}
   starPrice: {fileID: 865148388}
   buyStarButton: {fileID: 1270226743}
+  subMachineDamage: 3
+  sniperDamage: 5
+  akDamage: 7
