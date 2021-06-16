@@ -35,16 +35,9 @@ public class Player : MonoBehaviour
         {
             changeScene();
         }
-        checkHigh();
     }
 
-    void checkHigh(){
-        float ypos = transform.position.y;
-        if (ypos < -20)
-        {
-            SceneManager.LoadScene("Restart");
-        }
-    }
+
 
     public void changeScene()
     {
